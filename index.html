@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashraful's Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(40, 6, 92);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(76, 76, 170);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-family: monospace;
+            font-size: 2rem;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+
+
+        }
+
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            margin: 150px 0;
+            font-size: 2.5rem;
+
+        }
+
+        .mypic img {
+            width: 300px;
+            margin: 100px;
+            border-radius: 50%;
+
+        }
+
+        .rightSection img {
+            width: 90%;
+            margin: 30px 0;
+
+
+        }
+
+        .purple {
+            color: rgb(207, 25, 239);
+        }
+
+        #element {
+            color: rgb(207, 25, 239);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        .secondSection hr {
+            font-size: 1.4rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: blueviolet;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .text-grey {
+
+            color: rgb(124, 122, 122);
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 180px;
+
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 55px;
+            font-size: large;
+            width: 180px;
+
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 70px;
+            color: gray;
+            width: 200px;
+            font-size: 12px;
+
+        }
+
+        .image-top {
+            width: 34px;
+            position: relative;
+            top: -40px;
+            left: -15px;
+        }
+
+        footer {
+            background-color: rgb(10, 6, 88);
+            height: 111px;
+
+        }
+
+        .footer {
+            justify-content: space-evenly;
+            display: flex;
+            padding: 23px 50px;
+            font-size: 12px;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: rgb(0, 0, 33);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(40, 6, 92);
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+
+
+            }
+
+            nav ul li {
+                list-style: none;
+                margin: 0 10px;
+                font-size: 14px;
+
+
+
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            nav ul li a:hover {
+                color: rgb(76, 76, 170);
+                font-size: 1.01rem;
+            }
+
+            .left {
+                font-family: monospace;
+                font-size: 1.3rem;
+                margin: 2px 12px;
+
+            }
+
+            .firstSection {
+                display: flex;
+                justify-content: space-around;
+                margin: 23px 0;
+
+
+            }
+
+
+            .firstSection>div {
+                width: 100%;
+            }
+
+            .leftSection {
+                margin: 150px 0;
+                font-size: 1.5rem;
+
+            }
+
+            .mypic img {
+                width: 200px;
+                margin: 10px;
+                border-radius: 50%;
+
+            }
+
+            .rightSection img {
+                width: 90%;
+                margin: 30px 0;
+
+
+            }
+
+            .purple {
+                color: rgb(207, 25, 239);
+            }
+
+            #element {
+                color: rgb(207, 25, 239);
+            }
+
+            .secondSection {
+                max-width: 80vw;
+                margin: auto;
+                height: 80vh;
+
+            }
+
+            .secondSection hr {
+                font-size: 1.4rem;
+            }
+
+            main hr {
+                border: 0;
+                background-color: blueviolet;
+                height: 1.2px;
+                margin: 40px 84px;
+            }
+
+            .text-grey {
+
+                color: rgb(124, 122, 122);
+            }
+
+            .secondSection .box {
+                background: white;
+                width: 75vw;
+                height: 2px;
+                margin: 56px 0;
+                display: flex;
+            }
+
+            .secondSection .vertical {
+                height: 93px;
+                width: 1px;
+                background-color: white;
+                margin: 0 180px;
+
+
+            }
+
+            .vertical-title {
+                position: relative;
+                top: 55px;
+                font-size: medium;
+                width: 180px;
+
+
+            }
+
+            .vertical-desc {
+                position: relative;
+                top: 70px;
+                color: gray;
+                width: 200px;
+                font-size: 12px;
+
+            }
+
+            .image-top {
+                width: 34px;
+                position: relative;
+                top: -40px;
+                left: -15px;
+            }
+
+            footer {
+                background-color: rgb(10, 6, 88);
+                height: 111px;
+
+            }
+
+            .footer {
+                justify-content: space-evenly;
+                display: flex;
+                padding: 23px 50px;
+                font-size: 12px;
+
+            }
+
+            .footer ul {
+                list-style: none;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="left">Akash's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="mypic"><img src="me.jpg" alt="Avatar"> </div>
+            <div class="leftSection">Hi, I am <span class="purple">Akash</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+            </div>
+
+            <!--<div class="rightSection"><img src="bg.png" alt=""></div>-->
+        </section>
+<hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h3>Work Experience</h3>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                <div class="vertical-title">Frontend Developer (2024-)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laudantium non deleniti, minima, alias nemo, repellendus natus illo neque mollitia eos. Blanditiis consequuntur soluta incidunt ea placeat libero possimus fuga!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                <div class="vertical-title">Backend Developer (2024-)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laudantium non deleniti, minima, alias nemo, repellendus natus illo neque mollitia eos. Blanditiis consequuntur soluta incidunt ea placeat libero possimus fuga!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                <div class="vertical-title">Graphic Designer</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laudantium non deleniti, minima, alias nemo, repellendus natus illo neque mollitia eos. Blanditiis consequuntur soluta incidunt ea placeat libero possimus fuga!
+                    </div>
+                
+                
+            </div>
+                
+
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="footer">
+            <div class="footer-first">
+                <h3>
+                    Akash's Developer Portfolio
+                </h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+
+            </div>
+            <div class="footer-third">
+
+            </div>
+            <div class="footer-fourth">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+            <script>
+                var typed = new Typed('#element', {
+                    strings: ['Web Developer', 'Graphic Desginer'],
+                    typeSpeed: 50,
+                });
+            </script>
+</body>
+
+</html>
